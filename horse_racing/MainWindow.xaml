@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:horse_racing"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1200" x:Name="window">
+        Title="HorseRacing" Height="600" Width="1200" x:Name="window">
     <Grid x:Name="grid">
         <StackPanel Loaded="OnLoad">
             <Frame Height="450" Width="1200" x:Name="frame" NavigationUIVisibility="Hidden" />
