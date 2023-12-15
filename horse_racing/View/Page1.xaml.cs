@@ -77,12 +77,15 @@ namespace horse_racing
 
         void ChangeHorseName()
         {
+            if (string.IsNullOrWhiteSpace(changeName))
+                return;
             if (xListBox.SelectedIndex != -1)
                 selectedIndex = xListBox.SelectedIndex;
             else
                 xListBox.SelectedItem = xListBox.Items[selectedIndex];
             horseList[selectedIndex].Name = changeName;
 
+            changeName = "";
             EasterEgg();
             RenderHorseStat(selectedHorse);
             RenderHorseList();
