@@ -1,0 +1,22 @@
+﻿<Page x:Class="horse_racing.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:horse_racing"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1200"
+      Title="Page1">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <WrapPanel Background="Beige" x:Name="wrap">
+            <WrapPanel Orientation="Vertical">
+                <ListBox x:Name="xListBox" Visibility="Hidden" />
+                <Button x:Name="addButton" Click="AddButton_Click" Width="70" Height="30" Margin="20, 10" Content="Add Horse"/>
+                <Button x:Name="removeButton" Click="RemoveButton_Click" Width="70" Height="30" Content="Remove" />
+            </WrapPanel>
+            <StackPanel x:Name="canvas" Panel.ZIndex="1"></StackPanel>
+            <StackPanel x:Name="finishLine"></StackPanel>
+        </WrapPanel>
+    </ScrollViewer>
+</Page>

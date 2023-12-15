@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="horse_racing.userControl.UserControlStat"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:horse_racing.userControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="80" d:DesignWidth="400">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="300" Margin="15">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="이름 : " Foreground="White" />
+                    <TextBlock Text="{Binding Path=Name}" Foreground="White" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,3,0,0" >
+                    <StackPanel Width="70">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="체력 : " Foreground="White" />
+                            <TextBlock Text="{Binding Path=Stamina}" Foreground="White" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="점프력 : " Foreground="White" />
+                            <TextBlock Text="{Binding Path=Jump}" Foreground="White" />
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Width="90">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="속력 : " Foreground="White" />
+                            <TextBlock Text="{Binding Path=Speed}" Foreground="White" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="최대 속력 : " Foreground="White" />
+                            <TextBlock Text="{Binding Path=MaxSpeed}" Foreground="White" />
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBox Width="80" Height="30" x:Name="textBox" />
+                <Button Width="70" Height="30" Content="이름 수정" x:Name="changeButton" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

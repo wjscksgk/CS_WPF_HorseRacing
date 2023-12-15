@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="horse_racing.userControl.UserControlTrack"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:horse_racing.userControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <StackPanel x:Name="sp" Margin="0,3,0,1" Width="{Binding TrackWidth}" Height="{Binding TrackHeight}" Background="{Binding Fill}" Orientation="Horizontal">
+        <Canvas>
+            <StackPanel Orientation="Horizontal" x:Name="itemPanel" Canvas.Left="{Binding ItemPosition}" Canvas.Top="5"></StackPanel>
+            <StackPanel Orientation="Horizontal" x:Name="obstaclePanel" Canvas.Left="{Binding ObstaclePosition}" Canvas.Top="5"></StackPanel>
+            <TextBlock x:Name="hidden" Visibility="Hidden" />
+            <TextBlock x:Name="hidden2" Visibility="Hidden" />
+        </Canvas>
+        <Canvas x:Name="sp2"></Canvas>
+    </StackPanel>
+</UserControl>
