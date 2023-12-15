@@ -11,6 +11,6 @@
         <!-- 
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding BuffType}"></TextBlock>
         -->
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="ITEM" />
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" />
     </Grid>
 </UserControl>
